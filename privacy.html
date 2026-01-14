@@ -1,24 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DOTORING 개인정보처리방침</title>
+  <meta name="description" content="DOTORING 개인정보처리방침" />
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --text:#f6f7fb;
+      --muted:#b6bccb;
+      --line:rgba(255,255,255,.09);
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", Roboto, Arial;
+      background:
+        radial-gradient(1200px 600px at 18% 0%, rgba(110,231,255,.12), transparent 60%),
+        radial-gradient(900px 540px at 85% 12%, rgba(167,139,250,.12), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+    a{color:inherit}
+    .wrap{max-width:920px; margin:0 auto; padding:28px 18px 64px;}
+    .topbar{display:flex; justify-content:space-between; align-items:center; gap:12px; padding-bottom:18px;}
+    .brand{display:flex; align-items:center; gap:10px; text-decoration:none}
+    .logo{
+      width:38px; height:38px; border-radius:14px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      background: rgba(255,255,255,.03);
+    }
+    .logo img{width:100%; height:100%; object-fit:cover;}
+    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;}
+    .pill{
+      border:1px solid var(--line);
+      padding:10px 12px;
+      border-radius:999px;
+      background: rgba(255,255,255,.03);
+      text-decoration:none;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .card{
+      background: rgba(18,20,27,.82);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-inner{padding:22px;}
+    h1{margin:0 0 8px; font-size:24px}
+    .meta{margin:0 0 16px; color:var(--muted); font-size:13px}
+    h2{margin:18px 0 8px; font-size:16px}
+    ul{margin:8px 0 0 18px; color:var(--muted)}
+    p{margin:8px 0; color:var(--muted)}
+    .box{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding:14px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer{
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      font-size:12px; color:var(--muted);
+    }
+    .footer a{color:var(--muted); text-decoration:underline}
+  </style>
 </head>
 <body>
-  <h1>개인정보처리방침</h1>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="/">
+        <div class="logo"><img src="/icon.png" alt="DOTORING icon" /></div>
+        <div>
+          <div style="font-weight:800">DOTORING</div>
+          <div style="font-size:12px; color:var(--muted)">개인정보처리방침</div>
+        </div>
+      </a>
+      <div class="nav">
+        <a class="pill" href="/">홈</a>
+        <a class="pill" href="/terms.html">서비스 이용약관</a>
+      </div>
+    </div>
 
-  <p>DOTORING은 로그인 기능 제공을 위해 아래 정보를 수집합니다.</p>
+    <div class="card">
+      <div class="card-inner">
+        <h1>개인정보처리방침</h1>
+        <p class="meta">최종 업데이트: <span id="d"></span></p>
 
-  <ul>
-    <li>이메일 주소</li>
-    <li>기본 프로필 정보</li>
-  </ul>
+        <p>
+          DOTORING(이하 “서비스”)는 서비스 제공을 위해 필요한 최소한의 개인정보만을 수집·이용합니다.
+          본 방침은 사용자가 서비스를 이용하는 과정에서 수집되는 정보와 그 처리 방법을 설명합니다.
+        </p>
 
-  <p>
-    수집된 정보는 로그인 및 서비스 제공 목적 외에는
-    사용되지 않으며, 언제든지 계정 삭제를 요청할 수 있습니다.
-  </p>
+        <h2>1. 수집하는 개인정보</h2>
+        <ul>
+          <li>이메일 주소</li>
+          <li>기본 프로필 정보(예: 이름, 프로필 이미지 등 로그인 제공자에 의해 제공되는 정보)</li>
+        </ul>
 
-  <p>문의: dotoring@gmail.com</p>
+        <h2>2. 이용 목적</h2>
+        <ul>
+          <li>회원 식별 및 로그인 기능 제공</li>
+          <li>서비스 운영 및 사용자 문의 대응</li>
+          <li>보안, 부정 이용 방지 및 서비스 안정성 확보</li>
+        </ul>
+
+        <h2>3. 보관 및 파기</h2>
+        <p>
+          수집된 정보는 원칙적으로 이용 목적 달성 시 지체 없이 파기합니다.
+          다만, 법령에 따라 보관이 필요한 경우 해당 기간 동안 보관할 수 있습니다.
+        </p>
+
+        <h2>4. 제3자 제공 및 처리위탁</h2>
+        <p>
+          서비스는 로그인 및 서비스 운영을 위해 외부 인증/인프라 서비스를 사용할 수 있습니다.
+          이 경우 서비스 제공에 필요한 범위 내에서만 처리되며, 무단으로 판매/제공되지 않습니다.
+        </p>
+
+        <h2>5. 이용자의 권리</h2>
+        <ul>
+          <li>개인정보 열람/정정/삭제 요청</li>
+          <li>계정 삭제 요청</li>
+        </ul>
+
+        <div class="box">
+          계정 삭제 또는 개인정보 관련 문의는 아래 이메일로 요청하실 수 있습니다.<br/>
+          문의: <a href="mailto:zxcvbnm89432@gmail.com">zxcvbnm89432@gmail.com</a>
+        </div>
+
+        <div class="footer">
+          <span>© <span id="y"></span> DOTORING</span>
+          <span><a href="/">홈</a> · <a href="/terms.html">이용약관</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const now = new Date();
+    document.getElementById('y').textContent = now.getFullYear();
+    const pad = (n) => String(n).padStart(2,'0');
+    document.getElementById('d').textContent = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
+  </script>
 </body>
 </html>

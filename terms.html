@@ -1,19 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DOTORING 서비스 이용약관</title>
+  <meta name="description" content="DOTORING 서비스 이용약관" />
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --text:#f6f7fb;
+      --muted:#b6bccb;
+      --line:rgba(255,255,255,.09);
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", Roboto, Arial;
+      background:
+        radial-gradient(1200px 600px at 18% 0%, rgba(110,231,255,.12), transparent 60%),
+        radial-gradient(900px 540px at 85% 12%, rgba(167,139,250,.12), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.75;
+    }
+    a{color:inherit}
+    .wrap{max-width:920px; margin:0 auto; padding:28px 18px 64px;}
+    .topbar{display:flex; justify-content:space-between; align-items:center; gap:12px; padding-bottom:18px;}
+    .brand{display:flex; align-items:center; gap:10px; text-decoration:none}
+    .logo{
+      width:38px; height:38px; border-radius:14px;
+      border:1px solid var(--line);
+      overflow:hidden;
+      background: rgba(255,255,255,.03);
+    }
+    .logo img{width:100%; height:100%; object-fit:cover;}
+    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;}
+    .pill{
+      border:1px solid var(--line);
+      padding:10px 12px;
+      border-radius:999px;
+      background: rgba(255,255,255,.03);
+      text-decoration:none;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .card{
+      background: rgba(18,20,27,.82);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-inner{padding:22px;}
+    h1{margin:0 0 8px; font-size:24px}
+    .meta{margin:0 0 16px; color:var(--muted); font-size:13px}
+    h2{margin:18px 0 8px; font-size:16px}
+    p{margin:8px 0; color:var(--muted)}
+    ol{margin:8px 0 0 18px; color:var(--muted)}
+    li{margin:6px 0}
+    .box{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 14px;
+      padding:14px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footer{
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      font-size:12px; color:var(--muted);
+    }
+    .footer a{color:var(--muted); text-decoration:underline}
+  </style>
 </head>
 <body>
-  <h1>서비스 이용약관</h1>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="/">
+        <div class="logo"><img src="/icon.png" alt="DOTORING icon" /></div>
+        <div>
+          <div style="font-weight:800">DOTORING</div>
+          <div style="font-size:12px; color:var(--muted)">서비스 이용약관</div>
+        </div>
+      </a>
+      <div class="nav">
+        <a class="pill" href="/">홈</a>
+        <a class="pill" href="/privacy.html">개인정보처리방침</a>
+      </div>
+    </div>
 
-  <p>DOTORING은 쿠폰 관리 서비스를 제공합니다.</p>
+    <div class="card">
+      <div class="card-inner">
+        <h1>서비스 이용약관</h1>
+        <p class="meta">최종 업데이트: <span id="d"></span></p>
 
-  <p>
-    사용자는 본 서비스를 개인적인 용도로만 사용할 수 있으며,
-    서비스 악용 시 이용이 제한될 수 있습니다.
-  </p>
+        <p>
+          본 약관은 DOTORING(이하 “서비스”)의 이용과 관련하여 서비스와 이용자 간의 권리, 의무 및 책임사항을 규정합니다.
+        </p>
 
-  <p>문의: dotoring@gmail.com</p>
+        <h2>1. 서비스 내용</h2>
+        <p>
+          DOTORING은 쿠폰 및 기한이 있는 정보를 사용자가 저장·관리하고,
+          설정된 시점에 알림을 제공하는 기능을 포함할 수 있습니다.
+        </p>
+
+        <h2>2. 이용자의 의무</h2>
+        <ol>
+          <li>서비스를 개인적인 용도로만 이용합니다.</li>
+          <li>타인의 권리를 침해하거나 법령을 위반하는 방식으로 서비스를 이용하지 않습니다.</li>
+          <li>부정 이용(자동화 공격, 비정상 트래픽 유발, 계정 도용 시도 등)을 하지 않습니다.</li>
+        </ol>
+
+        <h2>3. 서비스 제공의 변경/중단</h2>
+        <p>
+          서비스는 운영상/기술상의 필요에 따라 일부 기능을 변경하거나 중단할 수 있습니다.
+          다만, 중대한 변경이 있는 경우 합리적인 범위에서 사전 안내를 제공할 수 있습니다.
+        </p>
+
+        <h2>4. 면책</h2>
+        <p>
+          서비스는 사용자의 저장 정보 및 알림 설정에 기반하여 동작하며,
+          기기 환경(알림 권한/배터리 최적화/절전 모드/네트워크 등)에 따라 알림이 지연되거나 제한될 수 있습니다.
+          서비스는 이러한 환경적 요인으로 인한 손해에 대해 법령이 허용하는 범위 내에서 책임을 제한합니다.
+        </p>
+
+        <h2>5. 문의</h2>
+        <div class="box">
+          이용약관 또는 서비스 관련 문의는 아래 이메일로 연락해 주세요.<br/>
+          문의: <a href="mailto:zxcvbnm89432@gmail.com">zxcvbnm89432@gmail.com</a>
+        </div>
+
+        <div class="footer">
+          <span>© <span id="y"></span> DOTORING</span>
+          <span><a href="/">홈</a> · <a href="/privacy.html">개인정보처리방침</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const now = new Date();
+    document.getElementById('y').textContent = now.getFullYear();
+    const pad = (n) => String(n).padStart(2,'0');
+    document.getElementById('d').textContent = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
+  </script>
 </body>
 </html>
